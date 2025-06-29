@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather Report"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="10dp">
+
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="M" />
+            <TextView android:text="T" />
+            <TextView android:text="W" />
+            <TextView android:text="T" />
+            <TextView android:text="F" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Day High" />
+            <TextView android:text="34°C" />
+            <TextView android:text="35°C" />
+            <TextView android:text="34°C" />
+            <TextView android:text="35°C" />
+            <TextView android:text="33°C" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Day Low" />
+            <TextView android:text="28°C" />
+            <TextView android:text="27°C" />
+            <TextView android:text="29°C" />
+            <TextView android:text="26°C" />
+            <TextView android:text="29°C" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Conditions" />
+            <ImageView android:src="@drawable/sunny" android:layout_width="40dp" android:layout_height="40dp" />
+            <ImageView android:src="@drawable/sunny" android:layout_width="40dp" android:layout_height="40dp" />
+            <ImageView android:src="@drawable/cloudy" android:layout_width="40dp" android:layout_height="40dp" />
+            <ImageView android:src="@drawable/rainy" android:layout_width="40dp" android:layout_height="40dp" />
+            <ImageView android:src="@drawable/cloudy" android:layout_width="40dp" android:layout_height="40dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
